@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Structure Finder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <nav class="navigation">
+        <ul>
+          <li><a id="compound-tab" href="#tab1">Compound Search</a></li>
+          <li><a class="inactive-tab" id="patent-tab" href="#tab2">Literature Search</a></li>
+        </ul>
+      </nav>
+
+      <div id="tab1" class="tab active">
+        <form class="compound-search-form">
+          <input id="compound-search-input" type="text" placeholder="Search Compound Name..."/>
+          <input id="compound-search-button" type="button" value="Search"/>
+        </form>
+      </div>
+      <div id="tab2" class="tab">
+        <form class="patent-search-form">
+          <input id="patent-search-input" type="text" placeholder="Search Patent/PubMed ID..."/>
+          <input id="patent-search-button" type="button" value="Search"/>
+          <a id="patent-download-link"><input id="patent-search-download" type="button"/></a>
+        </form>
+      </div>
+     
+      <div class="result-body"></div>
+      
+    <script src="popup.js"></script>
+  </body>
+</html>

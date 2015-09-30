@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Structure Finder",
+    "version": "1.0",
+    "description": "View compound structures in extension window.",
+    "icons": {
+        "19": "icons/icon19.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "16": "icons/icon16.png"
+    },
+
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "http://cactus.nci.nih.gov/chemical/structure/*",
+        "https://pubchem.ncbi.nlm.nih.gov/rest/pug/*",
+        "http://ops.epo.org/rest-services/*"
+    ],
+
+    "content_security_policy": "script-src 'self' https://www.google.com chrome-extension-resource: ; object-src 'self'",
+     
+    "browser_action": {
+        "default_icon": "icons/icon19.png",
+        "default_title": "Structure Finder",
+        "default_popup": "src/popup.html"
+    }
+}
